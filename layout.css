@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+#navbrand, #aboutme, #accom,#educa,#lang ,#cont{
+  color: aliceblue;
+}
+
+.progress-css {
+    height: 1rem;
+    background: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform-origin: 0 50%;
+    animation: scaleProgress auto linear forwards, colorChange auto linear
+        forwards;
+    animation-timeline: scroll(root);
+}
+  
+@keyframes scaleProgress {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+      background-color: #566cd9;
+    }
+    100% {
+      background-color: #182839;
+    }
+}
+
+#progress{
+    position: absolute;
+    top: 100%;
+}
+
+#toTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #4F81BB; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+}
+
+#toTopBtn i {
+  /* font-size: 2rem; */
+  transition: 0.2s ease-out;
+}
+  
+#toTopBtn:hover {
+    background-color: #2A425E; /* Add a dark-grey background on hover */
+    transition: 0.2s ease-out;
+}
+
+#toTopBtn:hover i{
+  transform: translateY(-4px);
+}
+
+#mapbtn{
+  transition: transform 0.3s;
+  background-color: #647891;
+  color: aliceblue;
+}
+
+#mapbtn:hover{
+  transform: translateY(-5px);
+  background-color: #1e436b;
+}
+
+#Contact i{
+  color: #ffffff;
+  transition: transform 0.3s;
+}
+#Contact i:hover{
+  color: #131f2c;
+  transform: translateY(-7px)
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+:root{
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7F00FF;
+  --card2-gradient-color2: #E100FF;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
+}
+
+.card-wrap{
+  width: 250px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.card-wrap-header{
+  height: 200px;
+  width: 100%;
+  background: red;
+  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.card-wrap-header i{
+  color: #fff;
+  font-size: 72px;
+}
+.card-wrap-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.card-wrap-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  
+}
+.card-wrap-text{
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.card-wrap-btn{
+  border: none;
+  border-radius: 100px;
+  padding: 5px 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.card-wrap-header.one{
+  background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+.card-wrap-header.two{
+  background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+.card-wrap-header.three{
+  background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+.card-wrap-header.four{
+  background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-wrap-btn.one{
+  background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
+}
+.card-wrap-btn.two{
+  background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+.card-wrap-btn.three{
+  background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+.card-wrap-btn.four{
+  background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-wrap{
+  transition: transform 0.3s;
+}
+
+.card-wrap:hover{
+  transform: translateY(-5px);
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+}
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00689c;
+  transform-origin: center;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+#drop :hover{
+  background-color: #194370;
+  color: aliceblue;
+}
+
+.carousel-img{
+  max-width: 1600px;
+  object-fit: cover;
+}
