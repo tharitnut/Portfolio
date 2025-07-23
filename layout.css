@@ -70,13 +70,13 @@
   transform: translateY(-4px);
 }
 
-#mapbtn{
+#tnibtn{
   transition: transform 0.3s;
   background-color: #647891;
   color: aliceblue;
 }
 
-#mapbtn:hover{
+#tnibtn:hover{
   transform: translateY(-5px);
   background-color: #1e436b;
 }
