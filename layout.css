@@ -71,14 +71,17 @@
 }
 
 #tnibtn{
-  transition: transform 0.3s;
-  background-color: #647891;
+  transition: all 0.3s ease;
+  background-color: #2F52E0;
   color: aliceblue;
+  border-radius: 20px;
+  padding: 8px 24px;
 }
 
 #tnibtn:hover{
-  transform: translateY(-5px);
-  background-color: #1e436b;
+  transform: translateY(-4px);
+  background-color: #4F6FF0;
+  box-shadow: 0 10px 20px rgba(47, 82, 224, 0.4);
 }
 
 #Contact i{
@@ -190,11 +193,12 @@
 }
 
 .card-wrap{
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
 }
 
 .card-wrap:hover{
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 .hover-underline-animation {
