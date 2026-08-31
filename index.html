@@ -20,8 +20,8 @@
     <link href="aos-master/dist/aos.css" rel="stylesheet" />
     <link
       rel="icon"
-      type="image/x-icon"
-      href="images/icons8-spongebob-squarepants-48.png"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%230f172a'/><text x='50' y='68' font-family='sans-serif' font-size='50' font-weight='bold' fill='%23a8c0ff' text-anchor='middle'>&lt;/&gt;</text></svg>"
     />
   </head>
 
@@ -29,15 +29,9 @@
     <header id="head" class="sticky-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a id="navbrand" class="navbar-brand fs-2 nav-custom-link" href="#"
-            ><img
-              alt="Icons8 Spongebob Squarepants 48"
-              src="images\icons8-spongebob-squarepants-48.png"
-              width="30"
-              height="24"
-            />
-            Tharit</a
-          >
+          <a id="navbrand" class="navbar-brand fs-2 nav-custom-link" href="#">
+            <i class="fa-solid fa-code me-2"></i>Tharit
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -51,6 +45,8 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
               <li class="nav-item">
                 <a
                   id="aboutme"
@@ -68,6 +64,14 @@
                   >Projects</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  id="lang"
+                  class="nav-link active cursive hover-underline-animation nav-custom-link"
+                  href="#Language"
+                  >Languages</a
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   id="educa"
@@ -81,8 +85,14 @@
                 </a>
                 <ul class="dropdown-menu cursive">
                   <li id="drop">
+                    <a class="dropdown-item nav-link" href="#University"
+                      >University</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li id="drop">
                     <a class="dropdown-item nav-link" href="#Education"
-                      >Elementary School</a
+                      >High School</a
                     >
                   </li>
                   <li id="drop">
@@ -92,24 +102,10 @@
                   </li>
                   <li id="drop">
                     <a class="dropdown-item nav-link" href="#Education"
-                      >High School</a
-                    >
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li id="drop">
-                    <a class="dropdown-item nav-link" href="#University"
-                      >University</a
+                      >Elementary School</a
                     >
                   </li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  id="lang"
-                  class="nav-link active cursive hover-underline-animation nav-custom-link"
-                  href="#Language"
-                  >Languages</a
-                >
               </li>
               <li class="nav-item">
                 <a
@@ -175,199 +171,13 @@
             <div class="col-3">Key Interests :</div>
             <div class="col">
               Software Development<br />
-              Music<br />
-              Gaming
+              Web &amp; Mobile Applications<br />
+              Full-Stack Architecture
             </div>
           </div>
         </div>
         <div class="col-lg-4 mt-4 mt-lg-2 text-center text-xl-start">
           <img alt="Me" src="images/me.jpg" class="img-fluid w-75 rounded" />
-        </div>
-      </div>
-
-      <div id="row3" class="p-3 row bg-3" data-aos="fade-up">
-        <h1 class="text-center mt-2"><b>Hobbies</b></h1>
-        <div id="row3-1" class="row mt-3">
-          <div class="col-lg-6 text-center">
-            <img
-              alt="Playing Game"
-              src="images/playing_game.jpg"
-              class="img-fluid rounded-3"
-              width="90%"
-            />
-            <h4 class="mt-3">Playing Games</h4>
-          </div>
-          <div class="col-lg-6 text-center mt-3 mt-lg-0">
-            <img
-              alt="Bass"
-              src="images/bass.jpg"
-              class="img-fluid rounded-3"
-              width="90%"
-              loading="lazy"
-            />
-            <h4 class="mt-3">Playing Bass Guitar</h4>
-          </div>
-        </div>
-        <div id="row3-2" class="row">
-          <div class="col-lg-6 text-center mt-3 mx-lg-auto">
-            <img
-              alt="Listening To Music"
-              src="images/listening-to-music.jpg"
-              class="img-fluid rounded-3"
-              width="90%"
-              loading="lazy"
-            />
-            <h4 class="mt-3">Listening to Music</h4>
-          </div>
-        </div>
-      </div>
-
-      <div id="row4" class="row p-3 bg-2" data-aos="fade-up">
-        <h1 class="text-center mt-2"><b>Games</b></h1>
-        <div id="row4-1" class="row mt-3">
-          <div class="col-lg-7">
-            <img
-              alt="League Of Legends"
-              src="images/League-of-Legends.jpg"
-              class="img-fluid rounded"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-5 mt-3 mt-lg-4">
-            <div>
-              <big><big>League of Legends (LOL)</big></big> is a Multiplayer
-              Online Battle Arena (MOBA) genre video game developed by Riot
-              Games. It was designed to operate on the Microsoft Windows
-              operating system. The game was first announced on October 7, 2008
-              and released a year later on October 27, 2009. League of Legends
-              has 5 roles: Top Lane, Jungle, Mid Lane, Bot Lane, and Support.
-              Each role has specific objectives, champion classes, and
-              beginner-friendly champions to try.
-            </div>
-            <div class="mt-4">My main role is Support.</div>
-          </div>
-        </div>
-        <div id="row4-2" class="row mt-4">
-          <div class="col-lg-7 order-lg-2">
-            <img
-              alt="Tft Banner"
-              src="images/TFT_banner.jpg"
-              class="img-fluid rounded"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-5 mt-3 mt-lg-4">
-            <div>
-              <big><big>Teamfight Tactics (TFT)</big></big> is an auto battler
-              game developed and published by Riot Games. The game is a spinoff
-              of League of Legends and is based on Dota Auto Chess, where
-              players compete online against seven other opponents by building a
-              team to be the last one standing. The game released as a League of
-              Legends game mode for Windows and macOS in June 2019 and as a
-              standalone game for Android and iOS in March 2020, featuring
-              cross-platform play between them.
-            </div>
-          </div>
-        </div>
-        <div id="row4-3" class="row mt-4">
-          <div class="col-lg-7">
-            <img
-              alt="Apex Legends"
-              src="images/Apex_Legends.jpg"
-              class="img-fluid rounded"
-              loading="lazy"
-            />
-          </div>
-          <div class="col-lg-5 mt-3 mt-lg-4">
-            <div>
-              <big><big>Apex Legends</big></big> is a free-to-play battle
-              royale-hero shooter game developed by Respawn Entertainment and
-              published by Electronic Arts. It was released for PlayStation 4,
-              Windows, and Xbox One in February 2019. Before the match, players
-              form into two- or three-player squads, and select from
-              pre-designed characters with distinctive abilities, known as
-              "Legends". The game has two gameplay modes. In "Battle Royale", up
-              to 20 three-person squads or 30 two-person duos land on an island
-              and search for weapons and supplies before attempting to defeat
-              all other players in combat. The available play area on the island
-              shrinks over time, forcing players to keep moving or else find
-              themselves outside the play area which can be fatal. The final
-              team alive wins the round.
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="row5" class="row p-3 rounded-bottom bg-3" data-aos="fade-up">
-        <h1 class="text-center mt-2"><b>Music</b></h1>
-        <h5 class="text-center">
-          I have an appreciation for almost every genre of music, but here are
-          my favorites:
-        </h5>
-        <div id="row5-1" class="mt-4 row">
-          <div class="col-lg-6 col-xl-4">
-            <div class="card mx-auto p-2" style="width: 19rem">
-              <img
-                alt="Iron Maiden (Album) Cover"
-                src="images/Iron_Maiden_(album)_cover.jpg"
-                class="card-img-top rounded"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Metal</h5>
-                <div class="row">
-                  <p class="card-text col">Favorite bands :</p>
-                  <p class="card-text col">
-                    Iron Maiden, <br />
-                    Metalica, <br />
-                    Skid Row
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4 mt-3 mt-lg-0">
-            <div class="card mx-auto p-2" style="width: 19rem">
-              <img
-                alt="Silly Fools"
-                src="images/silly_fools.jpg"
-                class="card-img-top rounded"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Rock</h5>
-                <div class="row">
-                  <p class="card-text col">Favorite bands :</p>
-                  <p class="card-text col">
-                    Silly Fools, <br />
-                    Guns N' Roses, <br />
-                    Big Ass
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-xl-4 mt-3 mt-xl-0 mx-lg-auto">
-            <div class="card mx-auto p-2" style="width: 19rem">
-              <img
-                alt="Tattoo Colour"
-                src="images/tattoo_colour.jpg"
-                class="card-img-top rounded"
-                loading="lazy"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pop</h5>
-                <div class="row">
-                  <p class="card-text col">Favorite bands :</p>
-                  <p class="card-text col">
-                    Tattoo Colour, <br />
-                    Three Man Down, <br />
-                    Klear
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -895,86 +705,6 @@
         </div>
       </div>
 
-      <div id="Education" class="rounded p-4 mt-5 row bg-1" data-aos="fade-up">
-        <h1 class="text-center">Education</h1>
-      </div>
-
-      <div id="row8" class="p-3 row mt-3 rounded-top bg-2" data-aos="fade-up">
-        <div id="Elementary" class="col-lg-4 text-center">
-          <h3><b>Elementary School</b></h3>
-          <img
-            alt="Thewphaingarm"
-            src="images/Thewphaingarm.png"
-            class="img-fluid rounded-3 w-50 mt-3"
-            loading="lazy"
-          />
-          <h5 class="mt-3">
-            Thewphaingarm Canadian Bilingual School <br />
-            (โรงเรียนทิวไผ่งาม)
-          </h5>
-          <h5 class="mt-2">2007 - 2009</h5>
-        </div>
-        <div id="Primary" class="col-lg-4 text-center mt-3 mt-lg-0">
-          <h3><b>Primary School</b></h3>
-          <img
-            alt="Rachawinit"
-            src="images/Rachawinit.png"
-            class="img-fluid rounded-3 w-50 mt-3"
-            loading="lazy"
-          />
-          <h5 class="mt-3">
-            Rachawinit School <br />
-            (โรงเรียนราชวินิต)
-          </h5>
-          <h5 class="mt-2">2010 - 2015</h5>
-        </div>
-        <div id="High" class="col-lg-4 text-center mt-3 mt-lg-0">
-          <h3><b>High School</b></h3>
-          <img
-            alt="Satit Patumwan"
-            src="images/satit_patumwan.png"
-            class="img-fluid rounded-3 w-50 mt-3"
-            loading="lazy"
-          />
-          <h5 class="mt-3">
-            Patumwan Demonstration School <br />
-            (โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ปทุมวัน)
-          </h5>
-          <h5 class="mt-2">2016 - 2021</h5>
-        </div>
-      </div>
-
-      <div
-        id="University"
-        class="p-3 row rounded-bottom bg-3"
-        data-aos="fade-up"
-      >
-        <h1 class="text-center mt-2"><b>University</b></h1>
-        <div id="row9-1" class="col-lg-4 text-center mx-auto">
-          <img
-            alt="Tni"
-            src="images/tni.png"
-            class="img-fluid rounded-3 w-50 mt-3"
-            loading="lazy"
-          />
-        </div>
-        <h3 class="mt-3 text-center">Thai-Nichi Institute of Technology</h3>
-        <h5 class="mt-2 text-center">2022 - Present</h5>
-        <div class="fs-5 mt-3 lead">
-          Now I am studying in the Information Technology faculty.
-        </div>
-        <div>
-          <button
-            type="button"
-            onclick="window.open('https://www.tni.ac.th/home/', '_blank')"
-            class="btn mt-3"
-            id="tnibtn"
-          >
-            More Information
-          </button>
-        </div>
-      </div>
-
       <div id="Language" class="rounded p-4 mt-5 row bg-1" data-aos="fade-up">
         <h1 class="text-center">Languages</h1>
       </div>
@@ -1040,205 +770,204 @@
           Programming Languages &amp; Tools
         </h2>
         <p class="text-center mb-4" style="color: #94a3b8; font-size: 0.95rem">
-          Technologies I work with
+          Technologies and tools I use to build applications
         </p>
 
-        <div class="row justify-content-center g-4">
-          <!-- Java -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="85"
-                style="--ring-color-1: #f12711; --ring-color-2: #f5af19"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+        <div class="row g-4 justify-content-center">
+          <!-- Languages -->
+          <div class="col-lg-6">
+            <div class="skill-cat-card h-100 p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="fa-solid fa-code fs-4" style="color: #a8c0ff !important;"></i>
+                <h4 class="text-white mb-0 font-weight-bold">Languages</h4>
               </div>
-              <h5 class="skill-name">Java</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-pill"><i class="fa-brands fa-html5 text-danger me-1"></i> HTML</span>
+                <span class="skill-pill"><i class="fa-brands fa-css3-alt text-primary me-1"></i> CSS</span>
+                <span class="skill-pill"><i class="fa-brands fa-js text-warning me-1"></i> JavaScript</span>
+                <span class="skill-pill"><img src="images/Logo_TS.svg" width="16" height="16" class="me-1" alt="TS" /> TypeScript</span>
+                <span class="skill-pill"><i class="fa-brands fa-php me-1" style="color: #777bb4;"></i> PHP</span>
+                <span class="skill-pill"><i class="fa-brands fa-java me-1" style="color: #f89820;"></i> Java</span>
+                <span class="skill-pill"><i class="fa-brands fa-python me-1" style="color: #3776ab;"></i> Python</span>
+                <span class="skill-pill"><img src="images/Logo_C_sharp.svg" width="16" height="16" class="me-1" alt="C#" /> C#</span>
+                <span class="skill-pill"><i class="fa-solid fa-bolt me-1" style="color: #00b4ab;"></i> Dart</span>
+              </div>
             </div>
           </div>
-          <!-- C# -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="75"
-                style="--ring-color-1: #7f00ff; --ring-color-2: #e100ff"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon">
-                  <img
-                    alt="C#"
-                    src="images/Logo_C_sharp.svg"
-                    class="img-fluid"
-                    style="width: 48px"
-                    loading="lazy"
-                  />
-                </div>
+
+          <!-- Frameworks -->
+          <div class="col-lg-6">
+            <div class="skill-cat-card h-100 p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="fa-solid fa-layer-group fs-4" style="color: #e100ff !important;"></i>
+                <h4 class="text-white mb-0 font-weight-bold">Frameworks</h4>
               </div>
-              <h5 class="skill-name">C#</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-pill"><i class="fa-brands fa-react text-info me-1"></i> React Native</span>
+                <span class="skill-pill"><i class="fa-brands fa-laravel text-danger me-1"></i> Laravel</span>
+                <span class="skill-pill"><i class="fa-solid fa-mobile-screen me-1" style="color: #02569b;"></i> Flutter</span>
+              </div>
             </div>
           </div>
-          <!-- Python -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="80"
-                style="--ring-color-1: #3f2b96; --ring-color-2: #a8c0ff"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon">
-                  <i class="fa-brands fa-python"></i>
-                </div>
+
+          <!-- Database -->
+          <div class="col-lg-6">
+            <div class="skill-cat-card h-100 p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="fa-solid fa-database fs-4" style="color: #38ef7d !important;"></i>
+                <h4 class="text-white mb-0 font-weight-bold">Database</h4>
               </div>
-              <h5 class="skill-name">Python</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-pill"><i class="fa-solid fa-database text-info me-1"></i> MySQL</span>
+                <span class="skill-pill"><i class="fa-solid fa-leaf text-success me-1"></i> MongoDB</span>
+              </div>
             </div>
           </div>
-          <!-- SQL -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="70"
-                style="--ring-color-1: #11998e; --ring-color-2: #38ef7d"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon">
-                  <img
-                    alt="SQL"
-                    src="images/sql_logo.png"
-                    class="img-fluid"
-                    style="width: 40px"
-                    loading="lazy"
-                  />
-                </div>
+
+          <!-- Tools -->
+          <div class="col-lg-6">
+            <div class="skill-cat-card h-100 p-4">
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <i class="fa-solid fa-screwdriver-wrench fs-4" style="color: #f5af19 !important;"></i>
+                <h4 class="text-white mb-0 font-weight-bold">Tools &amp; Environment</h4>
               </div>
-              <h5 class="skill-name">SQL</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-pill"><i class="fa-brands fa-git-alt text-danger me-1"></i> Git</span>
+                <span class="skill-pill"><i class="fa-brands fa-docker text-primary me-1"></i> Docker</span>
+                <span class="skill-pill"><i class="fa-solid fa-paper-plane text-warning me-1"></i> Postman</span>
+                <span class="skill-pill"><i class="fa-solid fa-code text-info me-1"></i> VS Code</span>
+                <span class="skill-pill"><i class="fa-solid fa-wand-magic-sparkles me-1" style="color: #a8c0ff;"></i> Google Antigravity</span>
+              </div>
             </div>
           </div>
-          <!-- HTML -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="90"
-                style="--ring-color-1: #f12711; --ring-color-2: #f5af19"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
-              </div>
-              <h5 class="skill-name">HTML</h5>
+        </div>
+      </div>
+
+      <div id="Education" class="rounded p-4 mt-5 row bg-1" data-aos="fade-up">
+        <h1 class="text-center">Education</h1>
+      </div>
+
+      <!-- Featured University Card -->
+      <div
+        id="University"
+        class="edu-featured-card mt-3 p-4 p-md-5 rounded"
+        data-aos="fade-up"
+      >
+        <div class="row align-items-center">
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <div class="edu-logo-box mx-auto">
+              <img
+                alt="Thai-Nichi Institute of Technology"
+                src="images/tni.png"
+                class="img-fluid"
+                loading="lazy"
+              />
             </div>
           </div>
-          <!-- PHP -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="60"
-                style="--ring-color-1: #7f00ff; --ring-color-2: #e100ff"
+          <div class="col-lg-9">
+            <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+              <span class="edu-badge edu-badge-primary">University</span>
+              <span class="edu-badge edu-badge-success">Graduated</span>
+              <span class="edu-year"
+                ><i class="fa-regular fa-calendar-days me-1"></i> 2022 -
+                2026</span
               >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-php"></i></div>
-              </div>
-              <h5 class="skill-name">PHP</h5>
+            </div>
+            <h2 class="edu-title text-white mb-2">
+              Thai-Nichi Institute of Technology
+            </h2>
+            <h4 class="edu-subtitle mb-3" style="color: #a8c0ff">
+              Bachelor of Information Technology (IT)
+            </h4>
+            <p class="edu-desc mb-3" style="color: #cbd5e1; font-size: 0.95rem">
+              Graduated with a focus on Software Development, Web &amp; Mobile
+              Applications and Database Systems.
+            </p>
+            <div>
+              <a
+                href="https://www.tni.ac.th/home/"
+                target="_blank"
+                class="btn"
+                id="tnibtn"
+              >
+                More Information
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square ms-1"
+                  style="font-size: 0.85rem"
+                ></i>
+              </a>
             </div>
           </div>
-          <!-- CSS -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="85"
-                style="--ring-color-1: #3f2b96; --ring-color-2: #a8c0ff"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-css3"></i></div>
-              </div>
-              <h5 class="skill-name">CSS</h5>
+        </div>
+      </div>
+
+      <!-- Previous Education Grid -->
+      <div id="row8" class="row g-4 mt-1" data-aos="fade-up">
+        <!-- High School -->
+        <div id="High" class="col-lg-4 col-md-6">
+          <div class="edu-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="edu-badge">High School</span>
+              <span class="edu-year">2016 - 2021</span>
             </div>
+            <div class="edu-logo-sm mx-auto mb-3">
+              <img
+                alt="Satit Patumwan"
+                src="images/satit_patumwan.png"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="edu-card-school text-white text-center mb-1">
+              Patumwan Demonstration School
+            </h4>
+            <p class="edu-card-thai text-center mb-0">
+              (โรงเรียนสาธิตมหาวิทยาลัยศรีนครินทรวิโรฒ ปทุมวัน)
+            </p>
           </div>
-          <!-- JavaScript -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="80"
-                style="--ring-color-1: #f5af19; --ring-color-2: #f12711"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
-              </div>
-              <h5 class="skill-name">JavaScript</h5>
+        </div>
+
+        <!-- Primary School -->
+        <div id="Primary" class="col-lg-4 col-md-6">
+          <div class="edu-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="edu-badge">Primary School</span>
+              <span class="edu-year">2010 - 2015</span>
             </div>
+            <div class="edu-logo-sm mx-auto mb-3">
+              <img
+                alt="Rachawinit"
+                src="images/Rachawinit.png"
+                class="img-fluid"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="edu-card-school text-white text-center mb-1">
+              Rachawinit School
+            </h4>
+            <p class="edu-card-thai text-center mb-0">(โรงเรียนราชวินิต)</p>
           </div>
-          <!-- TypeScript -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="75"
-                style="--ring-color-1: #11998e; --ring-color-2: #38ef7d"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon">
-                  <img
-                    alt="TS"
-                    src="images/Logo_TS.svg"
-                    class="img-fluid"
-                    style="width: 48px"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-              <h5 class="skill-name">TypeScript</h5>
+        </div>
+
+        <!-- Elementary School -->
+        <div id="Elementary" class="col-lg-4 col-md-6 mx-auto">
+          <div class="edu-card h-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <span class="edu-badge">Elementary School</span>
+              <span class="edu-year">2007 - 2009</span>
             </div>
-          </div>
-          <!-- React -->
-          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-            <div class="skill-card">
-              <div
-                class="skill-ring"
-                data-percent="70"
-                style="--ring-color-1: #61dafb; --ring-color-2: #3f2b96"
-              >
-                <svg viewBox="0 0 120 120">
-                  <circle class="ring-bg" cx="60" cy="60" r="52" />
-                  <circle class="ring-fg" cx="60" cy="60" r="52" />
-                </svg>
-                <div class="skill-icon"><i class="fa-brands fa-react"></i></div>
-              </div>
-              <h5 class="skill-name">React</h5>
+            <div class="edu-logo-sm mx-auto mb-3">
+              <img
+                alt="Thewphaingarm"
+                src="images/Thewphaingarm.png"
+                class="img-fluid"
+                loading="lazy"
+              />
             </div>
+            <h4 class="edu-card-school text-white text-center mb-1">
+              Thewphaingarm Canadian School
+            </h4>
+            <p class="edu-card-thai text-center mb-0">(โรงเรียนทิวไผ่งาม)</p>
           </div>
         </div>
       </div>
