@@ -104,12 +104,17 @@ const projectsData = [
       { name: "MySQL", icon: "fa-solid fa-database text-info" }
     ],
     githubUrl: "https://github.com/tharitnut/MeowManager",
-    reverseLayout: true,
-    graphicBox: {
-      icon: "fa-solid fa-cat text-warning",
-      title: "MeowManager",
-      subtitle: "Full-Stack Web App"
-    }
+    images: [
+      "images/MeowManager/MM1.png",
+      "images/MeowManager/MM2.png",
+      "images/MeowManager/MM3.png",
+      "images/MeowManager/MM4.png",
+      "images/MeowManager/MM5.png",
+      "images/MeowManager/MM6.png",
+      "images/MeowManager/MM7.png",
+      "images/MeowManager/MM8.png",
+      "images/MeowManager/MM9.png"
+    ]
   },
   {
     id: "TFTactics",
