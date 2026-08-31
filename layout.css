@@ -84,13 +84,27 @@
   box-shadow: 0 10px 20px rgba(47, 82, 224, 0.4);
 }
 
-#Contact i{
-  color: #ffffff;
-  transition: transform 0.3s;
+/* Contact section icon links */
+.contact-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #e2e8f0;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(.25,.8,.25,1);
 }
-#Contact i:hover{
-  color: #131f2c;
-  transform: translateY(-7px)
+.contact-icon-link:hover {
+  transform: translateY(-6px) scale(1.1);
+  background: linear-gradient(135deg, rgba(168,192,255,0.2), rgba(138,43,226,0.2));
+  border-color: rgba(168,192,255,0.4);
+  color: #A8C0FF;
+  box-shadow: 0 8px 25px rgba(138,43,226,0.25);
 }
 
 *{
@@ -231,4 +245,141 @@
 .carousel-img{
   max-width: 1600px;
   object-fit: cover;
+}
+
+/* Fix carousel height jumping between slides */
+.carousel-img .carousel-inner {
+  transition: min-height 0.4s ease;
+}
+.carousel-img .carousel-item {
+  align-items: center;
+  justify-content: center;
+}
+.carousel-img .carousel-item img {
+  object-fit: contain;
+}
+
+/* =========================================================
+   SPOKEN LANGUAGE CARDS
+   ========================================================= */
+.lang-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.35s cubic-bezier(.25,.8,.25,1);
+}
+.lang-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  border-color: rgba(255,255,255,0.15);
+}
+.lang-card-flag {
+  font-size: 3rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.lang-card-info {
+  flex: 1;
+  min-width: 0;
+}
+.lang-card-name {
+  margin: 0 0 .15rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #f1f5f9;
+}
+.lang-card-level {
+  display: inline-block;
+  font-size: .78rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: .65rem;
+}
+.lang-bar-track {
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  overflow: hidden;
+}
+.lang-bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--bar-color);
+  transition: width 1.2s cubic-bezier(.25,.8,.25,1);
+}
+.lang-bar-fill.animated {
+  width: calc(var(--target-width) * 1%);
+}
+
+/* =========================================================
+   SKILL CARDS  (Programming Languages)
+   ========================================================= */
+.skill-card {
+  text-align: center;
+  padding: 1.75rem 1rem 1.5rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.35s cubic-bezier(.25,.8,.25,1);
+}
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+  border-color: rgba(255,255,255,0.15);
+}
+.skill-ring {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 1rem;
+}
+.skill-ring svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.ring-bg {
+  fill: none;
+  stroke: rgba(255,255,255,0.06);
+  stroke-width: 8;
+}
+.ring-fg {
+  fill: none;
+  stroke: url(#ring-grad);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 326.73;          /* 2 * π * 52 */
+  stroke-dashoffset: 326.73;
+  transition: stroke-dashoffset 1.4s cubic-bezier(.25,.8,.25,1);
+}
+.skill-icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+.skill-icon i {
+  font-size: 2.2rem;
+  color: #e2e8f0;
+}
+.skill-icon img {
+  max-width: 48px;
+  max-height: 48px;
+}
+.skill-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: .95rem;
+  color: #cbd5e1;
+  letter-spacing: .3px;
 }
