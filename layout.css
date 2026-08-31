@@ -541,3 +541,112 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(168, 192, 255, 0.2);
 }
+
+/* =========================================================
+   PROJECT SPLIT CARDS STYLES
+   ========================================================= */
+.proj-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 24px !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.proj-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(168, 192, 255, 0.3) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.proj-media-box {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 18px;
+  padding: 1.5rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.proj-media-box img {
+  max-height: 380px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.proj-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.proj-badge-mobile {
+  background: rgba(97, 218, 251, 0.15);
+  color: #61dafb;
+  border: 1px solid rgba(97, 218, 251, 0.3);
+}
+
+.proj-badge-desktop {
+  background: rgba(248, 152, 32, 0.15);
+  color: #f89820;
+  border: 1px solid rgba(248, 152, 32, 0.3);
+}
+
+.proj-badge-maui {
+  background: rgba(127, 0, 255, 0.15);
+  color: #e100ff;
+  border: 1px solid rgba(225, 0, 255, 0.3);
+}
+
+/* =========================================================
+   EXPERIENCE SECTION STYLES
+   ========================================================= */
+.exp-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #61dafb 0%, #a8c0ff 100%);
+  border-radius: 20px 0 0 20px;
+}
+
+.exp-card:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(168, 192, 255, 0.3) !important;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.3);
+}
+
+.exp-list {
+  padding-left: 1.25rem;
+}
+
+.exp-list li {
+  margin-bottom: 0.4rem;
+}
+
+.exp-list li:last-child {
+  margin-bottom: 0;
+}
