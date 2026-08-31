@@ -9,9 +9,9 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 ---
 
-## 🌟 Live Demo
+## 🌐 Live Demo
 
-🔗 **Explore Website**: [https://portfolio-zeta-rouge-15.vercel.app/](https://portfolio-zeta-rouge-15.vercel.app/)
+🔗 [View Website](https://portfolio-zeta-rouge-15.vercel.app/)
 
 ---
 
