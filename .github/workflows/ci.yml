@@ -1,0 +1,64 @@
+name: CI - Code Quality & Audit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-validate:
+    name: Code Quality & Syntax Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Validate HTML Standards
+        run: htmlhint --config .htmlhintrc index.html
+
+      - name: Validate JavaScript Syntax
+        run: node --check layout.js
+
+  lighthouse:
+    name: Lighthouse Audit (Performance & SEO)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Lighthouse CI Audit
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          configPath: './.lighthouserc.json'
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        continue-on-error: true
+
+  link-check:
+    name: Broken Link & Asset Checker
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Link Checker
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --verbose --no-progress './**/*.html' './README.md' --exclude 'https://www.linkedin.com/.*' --exclude 'mailto:.*'
+          fail: false

@@ -1,6 +1,7 @@
 # 🧑‍💻 Tharit Ruangphungluang — Developer Portfolio
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://portfolio-zeta-rouge-15.vercel.app/)
+[![CI Pipeline](https://img.shields.io/github/actions/workflow/status/tharitnut/Portfolio/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI%20Pipeline)](https://github.com/tharitnut/Portfolio/actions/workflows/ci.yml)
 [![GitHub Portfolio](https://img.shields.io/badge/GitHub-tharitnut-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/tharitnut)
 [![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-Tharit--Ruangphungluang-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tharit-ruangphungluang-9662033b0/)
 [![TOEIC Score](https://img.shields.io/badge/TOEIC-870%2F990-FFD700?style=for-the-badge&logo=award&logoColor=black)](#spoken-languages)
