@@ -20,6 +20,7 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 | Project | Tech Stack | Type | Source Code |
 | :--- | :--- | :--- | :--- |
+| **PulseSync** | Next.js, TypeScript, Pusher | Web Application | [View Code](https://github.com/tharitnut/PulseSync) |
 | **ActiveAlert** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/tharitnut/ActiveAlert) |
 | **HealJai** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/NatrinT/SoftwareEngineerProject) |
 | **LinkPOS Simulation** | Flutter, Dart, MQTT Protocol | Enterprise POS | *Internal Proprietary (Digio Thailand)* |
@@ -32,6 +33,9 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 ## 💼 Work Experience
 
+- **IT Support (Contract)** @ *T.C.C. Technology Co., Ltd. (via Adecco) · World Bank Annual Meetings 2026* `Oct 2026`
+  - Provided on-site IT support for the World Bank Annual Meetings 2026, an international finance event hosted in Bangkok.
+  - Resolved general IT support cases and managed network infrastructure including LAN cabling, Wi-Fi, and printer setup.
 - **Android Developer Intern** @ *Digio (Thailand) Co., Ltd.* `Dec 2025 – Mar 2026`
   - Developed a Flutter-based POS application with EDC module integration & real-time order transmission via MQTT.
   - Implemented UI testing, system functional tests, and refactored maintainable codebase structures.
@@ -40,11 +44,12 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 ---
 
-## 🧰 Tech Stack & Tools
+## 🧰 Tech Stack & Skills
 
-- **Core Technologies**: HTML5, CSS3, JavaScript (ES6+)
-- **Frameworks & UI**: Bootstrap 5, FontAwesome 6, Google Fonts
-- **Development Tools**: VS Code, Git, GitHub Pages, Vercel
+- **Languages**: Java, Python, C#, PHP, Dart, JavaScript (ES6+), TypeScript, HTML5, CSS3
+- **Frameworks & Libraries**: React, Next.js, Laravel, Flutter, React Native, Tailwind CSS, Bootstrap 5, .NET MAUI
+- **Databases**: MySQL, MongoDB
+- **Tools & DevOps**: Git, GitHub Actions (CI/CD), Docker, Postman, Vercel, VS Code, Google Antigravity
 
 ---
 
@@ -68,4 +73,4 @@ To run this portfolio locally on your machine:
 - 📧 **Email**: `nut.tharit.r04@gmail.com`
 - 💼 **LinkedIn**: [tharit-ruangphungluang](https://www.linkedin.com/in/tharit-ruangphungluang-9662033b0/)
 - 💻 **GitHub**: [github.com/tharitnut](https://github.com/tharitnut)
-- 🎓 **Education**: B.Sc. Information Technology, Thai-Nichi Institute of Technology (TNI)
+- 🎓 **Education**: Bachelor of Information Technology (GPA 3.45 | Second Class Honours), Thai-Nichi Institute of Technology (TNI)

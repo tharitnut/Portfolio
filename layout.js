@@ -117,6 +117,29 @@ const projectsData = [
     ]
   },
   {
+    id: "PulseSync",
+    title: "PulseSync",
+    badge: "Web Application",
+    badgeIcon: "fa-solid fa-heart-pulse",
+    badgeClass: "proj-badge-desktop",
+    description: "A real-time healthcare web application built with Next.js and Pusher, featuring live patient registration sync, staff monitoring with session abandonment tracking, and automated CI/CD.",
+    technologies: [
+      { name: "Next.js", customSvg: "images/Logo_Nextjs.svg" },
+      { name: "TypeScript", customSvg: "images/Logo_TS.svg" },
+      { name: "Pusher", icon: "fa-solid fa-satellite-dish", iconColor: "#ff4f00" },
+      { name: "Tailwind CSS", customSvg: "images/Logo_Tailwind.svg" },
+      { name: "CI/CD", customSvg: "images/Logo_GitHubActions.svg" }
+    ],
+    githubUrl: "https://github.com/tharitnut/PulseSync",
+    reverseLayout: true,
+    images: [
+      "images/PulseSync/PS1.png",
+      "images/PulseSync/PS2.png",
+      "images/PulseSync/PS3.png",
+      "images/PulseSync/PS4.png"
+    ]
+  },
+  {
     id: "TFTactics",
     title: "TFTactics",
     badge: "Cross-Platform",
