@@ -24,6 +24,35 @@ function topFunction() {
 // =========================================================
 const projectsData = [
   {
+    id: "SlipExpenseTracker",
+    title: "Slip Expense Tracker",
+    badge: "Full-Stack Web App",
+    badgeIcon: "fa-solid fa-receipt",
+    badgeClass: "proj-badge-desktop",
+    description: "A full-stack personal finance web application featuring in-memory Thai bank slip OCR, learned merchant categorization, interactive monthly spending analytics, and automated CI/CD.",
+    technologies: [
+      { name: "Next.js 16", customSvg: "images/Logo_Nextjs.svg" },
+      { name: "FastAPI", customSvg: "images/Logo_FastAPI.svg" },
+      { name: "PostgreSQL", icon: "fa-solid fa-database", iconColor: "#336791" },
+      { name: "TypeScript", customSvg: "images/Logo_TS.svg" },
+      { name: "Tailwind CSS", customSvg: "images/Logo_Tailwind.svg" },
+      { name: "Tesseract OCR", icon: "fa-solid fa-qrcode text-warning" },
+      { name: "CI/CD", customSvg: "images/Logo_GitHubActions.svg" }
+    ],
+    githubUrl: "https://github.com/tharitnut/Slip-Expense-Tracker",
+    liveUrl: "https://slip-expense-tracker-nine.vercel.app",
+    reverseLayout: false,
+    images: [
+      "images/SlipExpenseTracker/SE1.png",
+      "images/SlipExpenseTracker/SE2.png",
+      "images/SlipExpenseTracker/SE3.png",
+      "images/SlipExpenseTracker/SE4.png",
+      "images/SlipExpenseTracker/SE5.png",
+      "images/SlipExpenseTracker/SE6.png",
+      "images/SlipExpenseTracker/SE7.png"
+    ]
+  },
+  {
     id: "ActiveAlert",
     title: "Active Alert Mobile Application",
     badge: "Mobile App",
@@ -35,6 +64,7 @@ const projectsData = [
       { name: "TypeScript", customSvg: "images/Logo_TS.svg" }
     ],
     githubUrl: "https://github.com/tharitnut/ActiveAlert",
+    reverseLayout: true,
     images: [
       "images/ActiveAlert/AA_first.png",
       "images/ActiveAlert/AA_login.png",
@@ -58,7 +88,7 @@ const projectsData = [
       { name: "TypeScript", customSvg: "images/Logo_TS.svg" }
     ],
     githubUrl: "https://github.com/NatrinT/SoftwareEngineerProject",
-    reverseLayout: true,
+    reverseLayout: false,
     images: [
       "images/HealJai/HJ_splash.png",
       "images/HealJai/HJ_home.png",
@@ -85,6 +115,7 @@ const projectsData = [
     ],
     isInternal: true,
     internalBadgeText: "Proprietary Code (Digio Thailand)",
+    reverseLayout: true,
     graphicBox: {
       icon: "fa-solid fa-shield-halved text-info",
       title: "LinkPOS Simulator",
@@ -267,7 +298,15 @@ function renderProjects() {
           <i class="fa-solid fa-lock me-1"></i> ${proj.internalBadgeText}
         </span>`;
     } else {
+      let liveDemoBtn = "";
+      if (proj.liveUrl) {
+        liveDemoBtn = `
+          <a href="${proj.liveUrl}" target="_blank" class="btn btn-outline-info rounded-pill px-4 btn-sm me-2">
+            <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Demo
+          </a>`;
+      }
       actionBtnHtml = `
+        ${liveDemoBtn}
         <a href="${proj.githubUrl}" target="_blank" class="btn btn-outline-light rounded-pill px-4 btn-sm">
           <i class="fa-brands fa-github me-1"></i> View Code
         </a>`;

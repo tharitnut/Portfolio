@@ -20,6 +20,7 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 | Project | Tech Stack | Type | Source Code |
 | :--- | :--- | :--- | :--- |
+| **Slip Expense Tracker** | Next.js, FastAPI, PostgreSQL, Tesseract OCR | Full-Stack Web App | [View Code](https://github.com/tharitnut/Slip-Expense-Tracker) |
 | **PulseSync** | Next.js, TypeScript, Pusher | Web Application | [View Code](https://github.com/tharitnut/PulseSync) |
 | **ActiveAlert** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/tharitnut/ActiveAlert) |
 | **HealJai** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/NatrinT/SoftwareEngineerProject) |
@@ -47,8 +48,8 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 ## 🧰 Tech Stack & Skills
 
 - **Languages**: Java, Python, C#, PHP, Dart, JavaScript (ES6+), TypeScript, HTML5, CSS3
-- **Frameworks & Libraries**: React, Next.js, Laravel, Flutter, React Native, Tailwind CSS, Bootstrap 5, .NET MAUI
-- **Databases**: MySQL, MongoDB
+- **Frameworks & Libraries**: React, Next.js, FastAPI, Laravel, Flutter, React Native, Tailwind CSS, Bootstrap 5, .NET MAUI
+- **Databases**: PostgreSQL, MySQL, MongoDB
 - **Tools & DevOps**: Git, GitHub Actions (CI/CD), Docker, Postman, Vercel, VS Code, Google Antigravity
 
 ---
