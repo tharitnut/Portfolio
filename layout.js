@@ -53,6 +53,29 @@ const projectsData = [
     ]
   },
   {
+    id: "PulseSync",
+    title: "PulseSync",
+    badge: "Web Application",
+    badgeIcon: "fa-solid fa-heart-pulse",
+    badgeClass: "proj-badge-desktop",
+    description: "A real-time healthcare web application built with Next.js and Pusher, featuring live patient registration sync, staff monitoring with session abandonment tracking, and automated CI/CD.",
+    technologies: [
+      { name: "Next.js", customSvg: "images/Logo_Nextjs.svg" },
+      { name: "TypeScript", customSvg: "images/Logo_TS.svg" },
+      { name: "Pusher", icon: "fa-solid fa-satellite-dish", iconColor: "#ff4f00" },
+      { name: "Tailwind CSS", customSvg: "images/Logo_Tailwind.svg" },
+      { name: "CI/CD", customSvg: "images/Logo_GitHubActions.svg" }
+    ],
+    githubUrl: "https://github.com/tharitnut/PulseSync",
+    reverseLayout: true,
+    images: [
+      "images/PulseSync/PS1.png",
+      "images/PulseSync/PS2.png",
+      "images/PulseSync/PS3.png",
+      "images/PulseSync/PS4.png"
+    ]
+  },
+  {
     id: "ActiveAlert",
     title: "Active Alert Mobile Application",
     badge: "Mobile App",
@@ -64,7 +87,7 @@ const projectsData = [
       { name: "TypeScript", customSvg: "images/Logo_TS.svg" }
     ],
     githubUrl: "https://github.com/tharitnut/ActiveAlert",
-    reverseLayout: true,
+    reverseLayout: false,
     images: [
       "images/ActiveAlert/AA_first.png",
       "images/ActiveAlert/AA_login.png",
@@ -88,7 +111,7 @@ const projectsData = [
       { name: "TypeScript", customSvg: "images/Logo_TS.svg" }
     ],
     githubUrl: "https://github.com/NatrinT/SoftwareEngineerProject",
-    reverseLayout: false,
+    reverseLayout: true,
     images: [
       "images/HealJai/HJ_splash.png",
       "images/HealJai/HJ_home.png",
@@ -115,7 +138,7 @@ const projectsData = [
     ],
     isInternal: true,
     internalBadgeText: "Proprietary Code (Digio Thailand)",
-    reverseLayout: true,
+    reverseLayout: false,
     graphicBox: {
       icon: "fa-solid fa-shield-halved text-info",
       title: "LinkPOS Simulator",
@@ -135,6 +158,7 @@ const projectsData = [
       { name: "MySQL", icon: "fa-solid fa-database text-info" }
     ],
     githubUrl: "https://github.com/tharitnut/MeowManager",
+    reverseLayout: true,
     images: [
       "images/MeowManager/MM1.png",
       "images/MeowManager/MM2.png",
@@ -145,29 +169,6 @@ const projectsData = [
       "images/MeowManager/MM7.png",
       "images/MeowManager/MM8.png",
       "images/MeowManager/MM9.png"
-    ]
-  },
-  {
-    id: "PulseSync",
-    title: "PulseSync",
-    badge: "Web Application",
-    badgeIcon: "fa-solid fa-heart-pulse",
-    badgeClass: "proj-badge-desktop",
-    description: "A real-time healthcare web application built with Next.js and Pusher, featuring live patient registration sync, staff monitoring with session abandonment tracking, and automated CI/CD.",
-    technologies: [
-      { name: "Next.js", customSvg: "images/Logo_Nextjs.svg" },
-      { name: "TypeScript", customSvg: "images/Logo_TS.svg" },
-      { name: "Pusher", icon: "fa-solid fa-satellite-dish", iconColor: "#ff4f00" },
-      { name: "Tailwind CSS", customSvg: "images/Logo_Tailwind.svg" },
-      { name: "CI/CD", customSvg: "images/Logo_GitHubActions.svg" }
-    ],
-    githubUrl: "https://github.com/tharitnut/PulseSync",
-    reverseLayout: true,
-    images: [
-      "images/PulseSync/PS1.png",
-      "images/PulseSync/PS2.png",
-      "images/PulseSync/PS3.png",
-      "images/PulseSync/PS4.png"
     ]
   },
   {
@@ -222,15 +223,16 @@ const projectsData = [
   {
     id: "RushHour",
     title: "Rush Hour",
-    badge: "Desktop Game",
-    badgeIcon: "fa-solid fa-gamepad",
+    badge: "Desktop App",
+    badgeIcon: "fa-solid fa-utensils",
     badgeClass: "proj-badge-desktop",
-    description: "A Java desktop puzzle game based on the classic Rush Hour sliding block puzzle, featuring interactive grid mechanics, vehicle movement, and level selection.",
+    description: "Desktop random food menu & meal ordering app with customization options and order history.",
     technologies: [
       { name: "Java", icon: "fa-brands fa-java", iconColor: "#f89820" },
       { name: "Java Swing / AWT", icon: "fa-solid fa-desktop text-primary" }
     ],
-    githubUrl: "https://github.com/tharitnut/JavaFinalProject",
+    githubUrl: "https://github.com/tharitnut/RushHour",
+    reverseLayout: false,
     images: [
       "images/RushHour/RH1.png",
       "images/RushHour/RH2.png",

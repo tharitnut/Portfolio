@@ -28,7 +28,7 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 | **MeowManager** | Laravel, PHP, MySQL | Web Application | [View Code](https://github.com/tharitnut/MeowManager) |
 | **TFTactics** | C#, .NET MAUI | Cross-Platform App | [View Code](https://github.com/tharitnut/TFTactics) |
 | **TaxEase** | Java, Database | Finance App | [View Code](https://github.com/tharitnut/TaxEase) |
-| **Rush Hour** | Java, Swing/AWT | Desktop Game | [View Code](https://github.com/tharitnut/JavaFinalProject) |
+| **Rush Hour** | Java, Swing/AWT | Desktop App | [View Code](https://github.com/tharitnut/RushHour) |
 
 ---
 
