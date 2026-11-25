@@ -50,7 +50,7 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 - **Languages**: Java, Python, C#, PHP, Dart, JavaScript (ES6+), TypeScript, HTML5, CSS3
 - **Frameworks & Libraries**: React, Next.js, FastAPI, Laravel, Flutter, React Native, Tailwind CSS, Bootstrap 5, .NET MAUI
 - **Databases**: PostgreSQL, MySQL, MongoDB
-- **Tools & DevOps**: Git, GitHub Actions (CI/CD), Docker, Postman, Vercel, VS Code, Google Antigravity
+- **Tools & DevOps**: Git, GitHub Actions (CI/CD), Docker, Postman, Vercel, VS Code
 
 ---
 

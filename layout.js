@@ -43,13 +43,14 @@ const projectsData = [
     liveUrl: "https://slip-expense-tracker-nine.vercel.app",
     reverseLayout: false,
     images: [
-      "images/SlipExpenseTracker/SE1.png",
-      "images/SlipExpenseTracker/SE2.png",
-      "images/SlipExpenseTracker/SE3.png",
-      "images/SlipExpenseTracker/SE4.png",
-      "images/SlipExpenseTracker/SE5.png",
-      "images/SlipExpenseTracker/SE6.png",
-      "images/SlipExpenseTracker/SE7.png"
+      "images/SlipExpenseTracker/dashboard-dark.png",
+      "images/SlipExpenseTracker/dashboard-light.png",
+      "images/SlipExpenseTracker/scan-slip.png",
+      "images/SlipExpenseTracker/slip.png",
+      "images/SlipExpenseTracker/transactions.png",
+      "images/SlipExpenseTracker/categories.png",
+      "images/SlipExpenseTracker/sign-in.png",
+      "images/SlipExpenseTracker/sign-up.png"
     ]
   },
   {
@@ -132,8 +133,8 @@ const projectsData = [
     badgeClass: "proj-badge-mobile",
     description: "A Flutter-based Point of Sale (POS) simulator with MQTT integration, Device Activation APIs, and real-time order transmission developed during internship.",
     technologies: [
-      { name: "Flutter", icon: "fa-solid fa-mobile-screen", iconColor: "#02569b" },
-      { name: "Dart", icon: "fa-solid fa-bolt", iconColor: "#00b4ab" },
+      { name: "Flutter", customSvg: "images/Logo_Flutter.svg" },
+      { name: "Dart", customSvg: "images/Logo_Dart.svg" },
       { name: "MQTT Protocol", icon: "fa-solid fa-network-wired text-warning" }
     ],
     isInternal: true,
@@ -155,7 +156,7 @@ const projectsData = [
     technologies: [
       { name: "Laravel", icon: "fa-brands fa-laravel text-danger" },
       { name: "PHP", icon: "fa-brands fa-php", iconColor: "#777bb4" },
-      { name: "MySQL", icon: "fa-solid fa-database text-info" }
+      { name: "MySQL", customSvg: "images/Logo_MySQL.svg" }
     ],
     githubUrl: "https://github.com/tharitnut/MeowManager",
     reverseLayout: true,
@@ -180,7 +181,7 @@ const projectsData = [
     description: "A Teamfight Tactics (TFT) game guide application allowing players to look up champion stats, item combination recipes, synergy traits, and recommended meta team comps.",
     technologies: [
       { name: "C#", customSvg: "images/Logo_C_sharp.svg" },
-      { name: ".NET MAUI", icon: "fa-solid fa-cubes text-primary" }
+      { name: ".NET MAUI", customSvg: "images/Logo_DotNet.svg" }
     ],
     githubUrl: "https://github.com/tharitnut/TFTactics",
     images: [
@@ -269,18 +270,27 @@ function renderProjects() {
           <img alt="${proj.title} ${idx + 1}" src="${imgSrc}" class="img-fluid rounded" loading="lazy" />
         </div>`).join("");
 
+      const indicatorsHtml = proj.images.length > 1 ? `
+        <div class="carousel-indicators mb-1">
+          ${proj.images.map((_, idx) => `
+            <button type="button" data-bs-target="#${proj.id}" data-bs-slide-to="${idx}" class="${idx === 0 ? 'active' : ''}" aria-label="Slide ${idx + 1}"></button>
+          `).join("")}
+        </div>` : "";
+
       mediaContent = `
         <div class="proj-media-box">
-          <div id="${proj.id}" class="carousel slide carousel-fade w-100 carousel-img" data-bs-ride="carousel" data-bs-interval="3500">
+          <div id="${proj.id}" class="carousel slide carousel-fade w-100 carousel-img" data-bs-interval="false">
+            ${indicatorsHtml}
             <div class="carousel-inner text-center">
               ${slidesHtml}
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#${proj.id}" data-bs-slide="prev">
+            ${proj.images.length > 1 ? `
+            <button class="carousel-control-prev" type="button" data-bs-target="#${proj.id}" data-bs-slide="prev" aria-label="Previous">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#${proj.id}" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#${proj.id}" data-bs-slide="next" aria-label="Next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+            </button>` : ""}
           </div>
         </div>`;
     }
@@ -433,64 +443,4 @@ document.addEventListener("DOMContentLoaded", function() {
   stabilizeCarouselHeights();
   window.addEventListener('resize', stabilizeCarouselHeights);
 
-  // =========================================================
-  //  Language section — scroll-triggered animations
-  // =========================================================
-
-  // --- Spoken language bars ---
-  const langBars = document.querySelectorAll('.lang-bar-fill');
-  if (langBars.length) {
-    const barObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          const bar = entry.target;
-          bar.style.setProperty('--target-width', bar.dataset.width);
-          bar.classList.add('animated');
-          barObserver.unobserve(bar);
-        }
-      });
-    }, { threshold: 0.3 });
-    langBars.forEach(function(bar) { barObserver.observe(bar); });
-  }
-
-  // --- Programming skill rings ---
-  const CIRCUMFERENCE = 2 * Math.PI * 52; // r = 52
-  const skillRings = document.querySelectorAll('.skill-ring');
-
-  // Create a unique SVG gradient for each ring
-  skillRings.forEach(function(ring, idx) {
-    const svg = ring.querySelector('svg');
-    const fg = ring.querySelector('.ring-fg');
-    const percent = parseInt(ring.dataset.percent, 10) || 0;
-    const c1 = getComputedStyle(ring).getPropertyValue('--ring-color-1').trim();
-    const c2 = getComputedStyle(ring).getPropertyValue('--ring-color-2').trim();
-
-    // Build a unique <linearGradient> per ring
-    const gradId = 'rg' + idx;
-    const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
-    defs.innerHTML =
-      '<linearGradient id="' + gradId + '" x1="0%" y1="0%" x2="100%" y2="0%">' +
-        '<stop offset="0%" stop-color="' + c1 + '"/>' +
-        '<stop offset="100%" stop-color="' + c2 + '"/>' +
-      '</linearGradient>';
-    svg.prepend(defs);
-    fg.setAttribute('stroke', 'url(#' + gradId + ')');
-
-    // Store target offset
-    ring._targetOffset = CIRCUMFERENCE - (CIRCUMFERENCE * percent / 100);
-  });
-
-  if (skillRings.length) {
-    const ringObserver = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          const ring = entry.target;
-          const fg = ring.querySelector('.ring-fg');
-          fg.style.strokeDashoffset = ring._targetOffset;
-          ringObserver.unobserve(ring);
-        }
-      });
-    }, { threshold: 0.3 });
-    skillRings.forEach(function(ring) { ringObserver.observe(ring); });
-  }
 });
