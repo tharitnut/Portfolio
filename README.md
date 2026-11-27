@@ -18,10 +18,10 @@ A responsive, high-performance developer portfolio website showcasing my full-st
 
 ## 🚀 Featured Projects
 
-| Project | Tech Stack | Type | Source Code |
+| Project | Tech Stack | Type | Links |
 | :--- | :--- | :--- | :--- |
-| **Slip Expense Tracker** | Next.js, FastAPI, PostgreSQL, Tesseract OCR | Full-Stack Web App | [View Code](https://github.com/tharitnut/Slip-Expense-Tracker) |
-| **PulseSync** | Next.js, TypeScript, Pusher | Web Application | [View Code](https://github.com/tharitnut/PulseSync) |
+| **Slip Expense Tracker** | Next.js, FastAPI, PostgreSQL, Tesseract OCR | Full-Stack Web App | [Live Demo](https://slip-expense-tracker-nine.vercel.app) · [View Code](https://github.com/tharitnut/Slip-Expense-Tracker) |
+| **PulseSync** | Next.js, TypeScript, Pusher | Web Application | [Live Demo](https://pulsesync-assignment.vercel.app/) · [View Code](https://github.com/tharitnut/PulseSync) |
 | **ActiveAlert** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/tharitnut/ActiveAlert) |
 | **HealJai** | React Native, TypeScript | Mobile Application | [View Code](https://github.com/NatrinT/SoftwareEngineerProject) |
 | **LinkPOS Simulation** | Flutter, Dart, MQTT Protocol | Enterprise POS | *Internal Proprietary (Digio Thailand)* |

@@ -68,6 +68,7 @@ const projectsData = [
       { name: "CI/CD", customSvg: "images/Logo_GitHubActions.svg" }
     ],
     githubUrl: "https://github.com/tharitnut/PulseSync",
+    liveUrl: "https://pulsesync-assignment.vercel.app/",
     reverseLayout: true,
     images: [
       "images/PulseSync/PS1.png",
@@ -313,13 +314,13 @@ function renderProjects() {
       let liveDemoBtn = "";
       if (proj.liveUrl) {
         liveDemoBtn = `
-          <a href="${proj.liveUrl}" target="_blank" class="btn btn-outline-info rounded-pill px-4 btn-sm me-2">
+          <a href="${proj.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-info rounded-pill px-4 btn-sm me-2">
             <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> Live Demo
           </a>`;
       }
       actionBtnHtml = `
         ${liveDemoBtn}
-        <a href="${proj.githubUrl}" target="_blank" class="btn btn-outline-light rounded-pill px-4 btn-sm">
+        <a href="${proj.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light rounded-pill px-4 btn-sm">
           <i class="fa-brands fa-github me-1"></i> View Code
         </a>`;
     }
